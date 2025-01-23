@@ -1,0 +1,35 @@
+.truck-upper {
+    width:100px;
+    position:fixed;
+    bottom:0px;
+    left:-200px;
+    animation:truck 5s 0s infinite linear;
+}
+.tires {
+    display:flex;
+    justify-content:space-between;
+}
+
+.tires img {
+    animation:tires 5s 0s infinite linear;
+}
+
+@keyframes truck {
+    0% {
+        left:-200px;
+    }
+    
+    100% {
+        left:100%;
+    }
+}
+
+@keyframes tires {
+    0% {
+        rotate:0deg;
+    }
+
+    100% {
+        rotate:360deg;
+    }
+}
